@@ -37,10 +37,6 @@ ul {
   margin-bottom: 1em;
 }
 
-nav {
-            text-align: right;
-            margin-bottom: 30px;
-}
 
 #personal_image {
             border-radius: 100%;      /* 关键属性：50%圆角 */
@@ -99,6 +95,10 @@ nav a {
 			width: 100%;
 			height: auto;
 	}
+	nav {
+            text-align: left;
+            margin-bottom: 30px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -112,6 +112,11 @@ nav a {
 	section{
 		width: 70%;
 		float: right;
+	}
+	
+	nav {
+            text-align: right;
+            margin-bottom: 30px;
 	}
 }
 
