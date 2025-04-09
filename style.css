@@ -1,0 +1,172 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+}
+
+strong {
+    font-weight: 600;  /* 改为中等字重 */
+}
+
+.paper-title {
+	color: black;
+	font-weight: bold;
+}
+  
+a {
+      text-decoration: none;
+	  color: #3498db;
+    }
+
+body {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+ }
+
+ 
+
+ul {
+  padding-left: 40px;    /* 缩进距离 */
+  list-style-type: disc; /* 项目符号样式 */
+  margin-top: 1em;       /* 上下外边距 */
+  margin-bottom: 1em;
+}
+
+nav {
+            text-align: right;
+            margin-bottom: 30px;
+}
+
+#personal_image {
+            border-radius: 100%;      /* 关键属性：50%圆角 */
+            width: 300px;
+			height:300px;
+            object-fit: cover;       /* 保持图片比例 */
+        }
+		
+nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+}
+
+.image-container {
+            width: 30%;
+			float: left;
+			position: relative;  /* 关键：为子元素提供定位基准 */
+			display: inline-block; /* 根据图片尺寸自适应 */
+        }
+		
+.paper-info {
+            width: 70%;
+			float: right;
+}
+
+.journal-label {
+    position: absolute;
+    top: 0px;          /* 距离顶部偏移 */
+    left: 0px;         /* 距离左侧偏移 */
+    background: #2c3e50; /* 背景颜色 */
+    color: white;
+    padding: 1px 2px;
+    border-radius: 1px;
+    font-weight: bold;
+    z-index: 2;         /* 确保层级高于图片 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* 可选：添加阴影 */
+}
+
+
+.container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 2rem;
+}
+
+		
+.header {
+            text-align: center;
+            margin-bottom: 40px;
+}
+
+@media (max-width: 500px) {
+	.header {		
+			width: 100%;
+			height: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		width: 30%;
+		float: left;
+		height: auto;
+		position: fixed;
+	}
+
+	section{
+		width: 70%;
+		float: right;
+	}
+}
+
+.header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+}
+
+.header p {
+            color: #7f8c8d;
+}
+
+
+section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+}
+
+
+.news-item {
+            margin-bottom: 20px;
+}
+
+.news-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+}
+
+
+.publication {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+}
+
+.publication-title {
+            font-weight: bold;
+}
+
+.publication-authors {
+            color: #666;
+            font-size: 0.95em;
+}
+
+.publication-conference {
+            color: #3498db;
+            font-style: italic;
+}
