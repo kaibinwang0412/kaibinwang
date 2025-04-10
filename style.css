@@ -7,6 +7,10 @@
             line-height: 1.6;
 }
 
+.important {
+	color: red;
+}
+
 strong {
     font-weight: 600;  /* 改为中等字重 */
 }
